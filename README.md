@@ -22,6 +22,9 @@ TODO
 
 ## Release notes for project
 
-### Version 0.1.0
 
+### Version 0.2.0
+- Added support to deploy the application on Heroku. [Heroku](https://www.heroku.com/).
+
+### Version 0.1.0
 - Was upgrade the project to Angular 5. [Here more information](https://angular-update-guide.firebaseapp.com/).
