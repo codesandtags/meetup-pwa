@@ -1,3 +1,33 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-toggleable-md navbar-expand-sm navbar-inverse fixed-top bg-inverse">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img class="d-inline-block align-top" height="30" src="/assets/images/logo_meetup.png" width="30"> Meetup
+    </a>
+    <div class="navbar-collapse collapse" id="navbarCollapse" aria-expanded="false" style="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+
+      <div class="d-block d-lg-inline-block">
+        <div class="HeaderNavlink px-0 py-2 m-0">
+          <a class="text-bold text-white no-underline" href="/login"
+             data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+          <span class="text-muted">or</span>
+          <a class="text-bold text-white no-underline" href="/join?source=header-home"
+             data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
