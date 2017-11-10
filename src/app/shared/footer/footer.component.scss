@@ -1,0 +1,11 @@
+@import '../../../sass/variables';
+
+footer {
+  background: $secondaryColor;
+  height: 100px;
+  text-align: center;
+  color: $whiteColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

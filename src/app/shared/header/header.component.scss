@@ -1,0 +1,36 @@
+@import '../../../sass/variables';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $grayColor;
+  box-shadow: 10px 0 36px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 25px;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.items {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+
+  .item {
+    padding: 20px 10px;
+    min-width: 60px;
+    text-align: center;
+  }
+}

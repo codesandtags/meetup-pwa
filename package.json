@@ -31,14 +31,14 @@
     "@angular/platform-server": "^5.0.0",
     "@angular/router": "^5.0.0",
     "body-parser": "^1.18.1",
-    "bootstrap": "4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14",
-    "typescript": "2.4.2"
+    "typescript": "2.4.2",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@types/jasmine": "~2.5.53",
