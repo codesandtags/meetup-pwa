@@ -7,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeetupListComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit() {
+    // this._meetupService.getMeetupList();
   }
 
 }
