@@ -1,0 +1,46 @@
+@import '../../../../sass/variables';
+
+.meetup-card {
+  border: 1px solid $grayColor;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+
+  > div {
+    padding: 10px;
+  }
+}
+
+.title {
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(248, 80, 50, 0.7) 0%, rgba(241, 111, 92, 0.9) 30%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 61%, rgba(231, 56, 39, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 22px;
+    color: $grayColor;
+  }
+}
+
+.description {
+  padding: 10px 0;
+}
+
+.see-more {
+  text-align: center;
+  font-weight: bold;
+  color: $primaryColor;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    a {
+      color: $linkColor;
+    }
+  }
+}

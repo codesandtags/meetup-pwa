@@ -1,3 +1,6 @@
-<p>
-  meetup-list works!
-</p>
+<h2>See the latest meetups</h2>
+<div class="meetup-list">
+  <div class="meetup-item" *ngFor="let meetup of meetups">
+    <app-meetup-card [meetup]="meetup"></app-meetup-card>
+  </div>
+</div>

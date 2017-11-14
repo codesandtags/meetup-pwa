@@ -1,0 +1,24 @@
+@import '../../../../sass/variables';
+
+.meetup-list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.meetup-item {
+  margin: 10px;
+  flex-basis: 100%;
+}
+
+@media (min-width: $md-breakpoint) {
+  .meetup-item {
+    flex-basis: 47%;
+  }
+}
+
+@media (min-width: $lg-breakpoint) {
+  .meetup-item {
+    flex-basis: 30%;
+  }
+}

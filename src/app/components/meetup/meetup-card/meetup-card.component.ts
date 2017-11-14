@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-meetup-card',
   templateUrl: './meetup-card.component.html',
-  styleUrls: ['./meetup-card.component.css']
+  styleUrls: ['./meetup-card.component.scss']
 })
 export class MeetupCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() meetup;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

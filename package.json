@@ -30,6 +30,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/platform-server": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "angularfire2": "^5.0.0-rc.3",
     "body-parser": "^1.18.1",
     "core-js": "^2.4.1",
     "dotenv": "^4.0.0",

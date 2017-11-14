@@ -5,7 +5,7 @@ export const environment = {
     authDomain: 'meetup-pwa-2017.firebaseapp.com',
     databaseURL: 'https://meetup-pwa-2017.firebaseio.com',
     projectId: 'meetup-pwa-2017',
-    storageBucket: '',
+    storageBucket: 'meetup-pwa-2017.appspot.com',
     messagingSenderId: '630429263101'
   }
 };
