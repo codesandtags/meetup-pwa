@@ -6,20 +6,20 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
+  height: 100%;
 
   > div {
     padding: 10px;
+    flex: 1;
   }
 }
 
 .title {
   height: 50px;
-  background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(163,163,163,1) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
 
   h3 {
+    margin: 0 !important;
     font-size: 22px;
     color: $headingColor;
   }
@@ -30,6 +30,8 @@
 }
 
 .see-more {
+  border-top: 0.5px solid $headerColor;
+  background: lighten($grayColor, 1%);
   text-align: center;
   font-weight: bold;
   color: $primaryColor;
@@ -37,8 +39,11 @@
   padding: 8px;
   display: block;
   cursor: pointer;
+  flex: 0 !important;
 
   &:hover {
+    background: $grayColor;
+
     a {
       color: $linkColor;
     }

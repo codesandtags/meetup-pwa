@@ -1,7 +1,7 @@
 @import '../../../../sass/variables';
 
 footer {
-  background: $secondaryColor;
+  background: linear-gradient(to bottom, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
   height: 100px;
   text-align: center;
   color: $whiteColor;
