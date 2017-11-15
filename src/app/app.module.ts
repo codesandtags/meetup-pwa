@@ -11,7 +11,6 @@ import { MeetupFormComponent } from './components/meetup/meetup-form/meetup-form
 import { MeetupSearchComponent } from './components/meetup/meetup-search/meetup-search.component';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { MeetupService } from './services/meetup.service';
 import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
@@ -37,7 +36,6 @@ import { HomeComponent } from './components/shared/home/home.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, 'meetup-pwa-2017'), // imports firebase/app needed for everything
-    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireDatabaseModule,
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AppRoutingModule
