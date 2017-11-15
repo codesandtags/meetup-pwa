@@ -18,6 +18,7 @@
   a {
     display: flex;
     align-items: center;
+    color: $blackColor;
 
     img {
       width: 32px;
@@ -38,9 +39,15 @@
     min-width: 60px;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 
-    &.active, &:hover {
-      background: white;
+    a {
+      &.active, &:hover {
+        background: white;
+        color: $primaryColor;
+      }
     }
   }
 }
