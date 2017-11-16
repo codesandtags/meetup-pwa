@@ -1,11 +1,16 @@
 @import '../../../../sass/variables';
 
+h2 {
+  padding-left: 30px;
+}
+
 .meetup-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
 
 .meetup-item {
@@ -24,3 +29,4 @@
     flex-basis: 31.5%;
   }
 }
+

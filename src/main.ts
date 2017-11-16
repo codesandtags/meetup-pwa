@@ -18,9 +18,10 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('/sw.js')
     .then(() => {
-      console.info('Service worker registered!');
+      // TODO something when the service worker is register
     })
     .catch((err) => {
       console.error('Upsss! there was an error');
+      // TODO something when there is an error
     });
 }
