@@ -35,7 +35,7 @@
   justify-content: flex-end;
 
   .item {
-    padding: 20px 10px;
+    padding: 0;
     min-width: 60px;
     text-align: center;
     cursor: pointer;
@@ -44,10 +44,19 @@
     font-weight: bold;
 
     a {
+      padding: 20px 10px;
+      width: 100%;
+      color: $blackColor;
+
       &.active, &:hover {
         background: white;
         color: $primaryColor;
       }
+    }
+
+    .hamburger {
+      padding: 20px 10px;
+      width: 100%;
     }
   }
 }

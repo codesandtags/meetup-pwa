@@ -7,6 +7,12 @@
   background-size: contain;
 }
 
+@media (min-width: $md-breakpoint) {
+  .error-404 {
+    background-size: 60%;
+  }
+}
+
 @media (min-width: $lg-breakpoint) {
   .error-404 {
     background-size: 40%;
