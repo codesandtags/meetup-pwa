@@ -14,7 +14,7 @@ export class MeetupService {
   }
 
   public getMeetupList(): Observable<Meetup[]> {
-    console.log('Getting meetups!');
+    console.info('[📅 Meetup] Getting meetups...');
     return this.meetupsCollection.snapshotChanges().map(changes => {
       return changes.map(c => ({key: c.payload.key, ...c.payload.val()}));
     });
