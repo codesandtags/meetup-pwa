@@ -23,6 +23,11 @@
     margin: 0 !important;
     font-size: 22px;
     color: $headingColor;
+
+    span.fa {
+      color: $primaryColor;
+      width: 22px;
+    }
   }
 }
 
@@ -47,6 +52,23 @@
 
     a {
       color: $primaryColor;
+    }
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0 10px;
+  flex-wrap: wrap;
+
+  .detail-item {
+    border-bottom: 1px solid $grayColor;
+    padding: 5px 10px;
+    span {
+      width: 20px;
+      text-align: center;
     }
   }
 }
