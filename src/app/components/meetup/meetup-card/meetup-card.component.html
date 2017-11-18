@@ -5,9 +5,17 @@
   <div class="description">
     {{meetup?.description}}
   </div>
-  <div class="details">
-    Here is the details
-  </div>
+  <ul class="details">
+    <li class="detail-item">
+      <span class="fa fa-map-marker"></span> {{meetup?.event.city}}, {{meetup?.event.address}}
+    </li>
+    <li class="detail-item">
+      <span class="fa fa-calendar-o"></span> {{meetup?.event.startDate | date:'short'}} - {{meetup?.event.endDate | date:'short'}}
+    </li>
+    <li class="detail-item">
+      <span class="fa fa-users"></span> {{meetup?.event.guest}} Guest
+    </li>
+  </ul>
   <div class="see-more">
     <a href="#">See More <span class="fa fa-arrow-circle-o-right"></span></a>
   </div>

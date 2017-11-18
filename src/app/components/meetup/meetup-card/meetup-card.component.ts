@@ -30,6 +30,8 @@ export class MeetupCardComponent implements OnInit {
       default :
         this.category = 'fa-calendar';
     }
+
+    this.meetup.event.guest = this.meetup.event.guest.replace('_', ' - ');
   }
 
 }
