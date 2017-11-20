@@ -1,6 +1,11 @@
-var CACHE_STATIC_NAME = 'static-v1';
-var CACHE_DYNAMIC_NAME = 'dynamic-v1';
-
+let CACHE_STATIC_NAME = 'static-v1';
+let CACHE_DYNAMIC_NAME = 'dynamic-v1';
+let STATIC_FILES = [
+  '/',
+  '/index.html',
+  '/assets/images/404.png',
+  '/assets/images/logo_meetup.png'
+];
 
 /**
  * Tasks run by Service Worker when the [install] event is fired
@@ -11,13 +16,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME).then(function(cache) {
       console.info('[SW 🔨] Pre-Caching static files...');
-      return cache.addAll([
-        '/',
-        '/manifest.json',
-        '/index.html',
-        '/assets/images/404.png',
-        '/assets/images/logo_meetup.png'
-      ]);
+      return cache.addAll(STATIC_FILES);
     }).catch(function(error) {
       console.error('[SW 🔨✖️] Upsss there was an error Pre-Caching: ', error);
     })
