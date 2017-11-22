@@ -4,6 +4,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+// Polyfills
+import idb from './assets/scripts/idb';
+
 if (environment.production) {
   enableProdMode();
 }
@@ -24,3 +27,5 @@ if ('serviceWorker' in navigator) {
       console.error('[SW 🔨✖️] Upsss there was an error registering the Service Worker: ', err);
     });
 }
+
+console.info(idb);
