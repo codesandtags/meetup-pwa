@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  supportNotification = false;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    if ('Notification' in window) {
+      this.supportNotification = true;
+    }
+  }
+
+  askForNotificationPermission() {
+    Notification.requestPermission(function (result) {
+      if (result !== 'granted') {
+        console.info('The user has not granted the notifications');
+      }
+    });
+  }
 }

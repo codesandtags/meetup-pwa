@@ -4,8 +4,8 @@
 importScripts('/assets/scripts/idb.js');
 importScripts('/assets/scripts/idb-meetup.js');
 
-let CACHE_STATIC_NAME = 'static-v1';
-let CACHE_DYNAMIC_NAME = 'dynamic-v1';
+let CACHE_STATIC_NAME = 'static-v3';
+let CACHE_DYNAMIC_NAME = 'dynamic-v3';
 let STATIC_FILES = [
   '/',
   '/index.html',
@@ -58,7 +58,7 @@ self.addEventListener('activate', function(event) {
  */
 self.addEventListener('fetch', function(event) {
   console.info('[SW 🔨] SW has been fetched!');
-  console.warn('[SW 🔨] Loading URL => ', event.request.url);
+  //console.warn('[SW 🔨] Loading URL => ', event.request.url);
 
 
   event.respondWith(
@@ -84,4 +84,24 @@ self.addEventListener('fetch', function(event) {
         }
       })
   );
+});
+
+
+/**
+ * Example method for sync data and storage temporary in IndexDB
+ */
+function syncData() {
+  if ('serviceWorker' in navigator && 'SyncManager' in window) {
+    navigator.serviceWorker.readyState
+      .then(function(sw) {
+        sw.sync.register('sync-meetup-post');
+      });
+  }
+}
+
+/**
+ * When the connection come back, then the application will be sync
+ */
+self.addEventListener('sync', function(event) {
+  console.info('[SW 🔨] The connection has been restored, now we will continue ', event);
 });
