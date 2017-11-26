@@ -47,4 +47,3 @@ function clearAllData(storeName) {
       return transaction.complete;
     })
 }
-
