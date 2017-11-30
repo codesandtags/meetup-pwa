@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 
 # Ignored files in order to avoid error in heroku build
-# yarn.lock
-# package.json.lock
+yarn.lock
+package.json.lock
