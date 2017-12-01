@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
     .then(function () {
       console.info('Nice! you are doing this shit very well!');
     })
-    .catch(function () {
-      console.error('Upss there is an error here man! :O');
+    .catch(function (error) {
+      console.error('Upss there is an error here man! :O ', error);
     });
 }
