@@ -24,7 +24,7 @@
         "sass/styles.sass"
       ],
       "scripts": [
-
+        "assets/scripts/funny.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
