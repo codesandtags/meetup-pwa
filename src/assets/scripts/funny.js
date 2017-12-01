@@ -13,6 +13,6 @@ window.addEventListener('keyup', function(e) {
       audio.currentTime = 0;
       console.log('DING DING!');
     }
-    //cornify_add();
+    cornify_add();
   }
 });
